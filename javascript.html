@@ -1,0 +1,117 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal JavaScript Example</title>
+    <script>
+        function showMessage() {
+            alert('Hello, Internal JavaScript!');
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <button onclick="showMessage()">Click me</button>
+</body>
+</html> -->
+
+<!-- external calling -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript Example</title>
+    <script src="script.js" ></script>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <button onclick="showMessage()">Click me</button>
+</body>
+</html> -->
+
+<!-- ONCLICK -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+<button onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+<script> 
+function myFunction() {
+  document.getElementById( "demo").innerHTML = "Hello World";
+}
+</script>
+</body>
+</html> -->
+
+<!-- MouseOver MouseOut -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onmouseover Event</h2>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="imagelotus.jpg" alt="Smiley" width="32" height="32">
+<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+</body>
+</html>  -->
+
+<!-- mouse up and mouse down -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onmousedown Event</h2>
+<p>Clock the text below!</p>
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+The mouseDown() function sets the color of this text to red.
+The mouseUp() function sets the color of this text to blue.
+</p>
+<script>
+function mouseDown() {
+  document.getElementById("myP").style.color = "red";
+}
+function mouseUp() {
+  document.getElementById("myP").style.color = "blue";
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").keydown(function(){
+    $("input").css("background-color", "yellow");
+  });
+  $("input").keyup(function(){
+    $("input").css("background-color", "pink");
+  });
+});
+</script>
+</head>
+<body>
+Enter your name: <input type="text">
+<p>Enter your name in the input field above. It will change background color on keydown and keyup.</p>
+</body>
+</html> -->
+
+
